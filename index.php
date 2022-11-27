@@ -5,11 +5,11 @@ require_once 'config.php';
 // views
 require_once SOURCE_BASE . 'partials/header.php';
 
-
 $method = strtolower($_SERVER['REQUEST_METHOD']);
+echo $method;
 
 $rpath = str_replace('/image-uploader/', '', CURRENT_URI);
-echo $rpath;
+// echo $rpath;
 
 if ($rpath === '') {
   $rpath = 'home';
